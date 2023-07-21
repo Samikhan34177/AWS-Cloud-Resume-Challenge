@@ -20,13 +20,8 @@ jobs:
         SOURCE_DIR: 'AWS-Cloud-Resume-Challenge'
         AWS_REGION: 'us-east-1'
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-<<<<<<< HEAD
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-=======
-        AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-        AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
->>>>>>> da2b8e47ec071ad09433535c66700b8a119dce6d
 
     # Invalidate Cloudfront
     - name: invalidate
@@ -35,10 +30,5 @@ jobs:
         DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
         PATHS: '/*'
         AWS_REGION: 'us-east-1'
-<<<<<<< HEAD
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-=======
-        AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
-        AWS_SECRET_KEY: ${{ secrets.AWS_SECRET_KEY }}
->>>>>>> da2b8e47ec071ad09433535c66700b8a119dce6d
