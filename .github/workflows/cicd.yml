@@ -17,7 +17,7 @@ jobs:
       with:
         args: --exclude '.git/' --delete --follow-symlinks
       env:
-        SOURCE_DIR: 'CRC-frontend'
+        SOURCE_DIR: 'website'
         AWS_REGION: 'us-east-1'
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID}}
