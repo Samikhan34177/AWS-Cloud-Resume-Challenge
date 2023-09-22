@@ -3,7 +3,7 @@ let countValue;
 
 async function updateCounter() {
     try {
-        const response = await fetch("https://pljre3bfb2w2l7p3k3z2kp22ie0txdew.lambda-url.us-east-1.on.aws/Your-lambdaFunction-URL");
+        const response = await fetch("https://437cfskspj.execute-api.us-east-1.amazonaws.com/endpoint");
         
         if (!response.ok) {
             throw new Error('Network response was not ok');
